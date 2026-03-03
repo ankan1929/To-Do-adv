@@ -1,0 +1,131 @@
+body{
+    background-color: #222438;
+    margin: 0;
+    font-family: poppins;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: repeating-linear-gradient(to right, transparent 0 50px, #fff1 50px 51px),
+    repeating-linear-gradient(to bottom, transparent 0 50px, #fff1 50px 51px);
+    position: relative;
+}
+main h1{
+    text-align: center;
+    color: #d6d6d6;
+    font-size: 2.6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 15px;
+}
+main h1 span{
+    border-bottom: 2px solid orangered;
+}
+#clearBtn{
+    width: max-content;
+    height: max-content;
+    padding: 9px 10px;
+    border: none;
+    border-radius: 24px;
+    background-color: whitesmoke;
+    font-size: large;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 125px;
+    outline: none;
+}
+form{
+    background-color: #eee;
+    width: max-content;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 24px;
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+form input, button{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: large;
+    cursor: pointer;
+}
+form input::-webkit-color-swatch-wrapper{
+    padding: 0;
+}
+form input::-webkit-color-swatch-wrapper{
+    border-radius: 50%;
+}
+#color{
+    border-radius: 50%;
+}
+#list textarea{
+    all: unset;
+    color: #d6d6d6;
+}
+#list .note{
+    background-color: #333;
+    width:max-content;
+    border-top: 30px solid #e6b905;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px #0004;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+#list .note span{
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    height: 30px;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: large;
+    padding-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    #clearBtn {
+        font-size: small;
+        top: 85px;
+        left: 15px;
+        padding: 7px 12px;
+        font-size: medium;
+    }
+
+    form {
+        flex-wrap: wrap;
+        top: 30px;
+        left: 10px;
+        gap: 5px;
+    }
+
+    form input, button {
+        width: 28px;
+        height: 28px;
+        font-size: medium;
+    }
+
+    #list .note {
+        max-width: 85vw;
+        word-break: break-word;
+    }
+
+    #list textarea {
+        width: 100%;
+        min-height: 120px;
+    }
+}
